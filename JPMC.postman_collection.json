@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "7b3f7b02-2064-4b2f-87b2-69e7aa1ea39b",
+		"name": "JPMC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MoviesSchedule",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/movietheater/movies/schedule",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"movietheater",
+						"movies",
+						"schedule"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reserve",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer\": {\r\n        \"id\": 1,\r\n        \"name\": \"john\"\r\n    },\r\n    \"sequence\":3,\r\n    \"numberOfTickets\":10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/movietheater/movies/reserve",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"movietheater",
+						"movies",
+						"reserve"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
